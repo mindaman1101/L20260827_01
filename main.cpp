@@ -4,21 +4,53 @@
 #include "Slime.h"
 #include "WildBoar.h"
 
-using namespace std;	
+using namespace std;
 
 int main()
 {
-	APlayer* Player = new APlayer();
-	AGoblin* Goblin = new AGoblin();
-	ASlime* Slime = new ASlime();
-	AWildBoar* WildBoar = new AWildBoar();
+	int PlayerCount = 1;
+	int SlimeCount = 3;
+	int GoblinCount = 2;
+	int WildBoarCount = 1;
 
-	cout << endl << "---" << endl << endl;
 
-	delete Player;
-	delete Goblin;
-	delete Slime;
-	delete WildBoar;	
-	
+	APlayer* Player = new APlayer[PlayerCount];
+	ASlime* Slimes = new ASlime[SlimeCount];
+	AGoblin* Goblins = new AGoblin[GoblinCount];
+	AWildBoar* WildBoar = new AWildBoar[WildBoarCount];
+
+
+	for (int i = 0; i < PlayerCount; i++)
+	{
+		Player[i].Move();
+	}	
+
+	for (int i = 0; i < SlimeCount; i++)
+	{
+		Slimes[i].Move();
+	}
+
+	for (int i = 0; i < GoblinCount; i++)
+	{
+		Goblins[i].Move();
+	}
+
+	for (int i = 0; i < WildBoarCount; i++)
+	{
+		WildBoar[i].Move();
+	}
+
+
+	delete[] Player;
+	delete[] Goblins;
+	delete[] Slimes;
+	delete[] WildBoar;
+
+
+	Player = nullptr;
+	Goblins = nullptr;
+	Slimes = nullptr;
+	WildBoar = nullptr;
+
 	return 0;
 }
