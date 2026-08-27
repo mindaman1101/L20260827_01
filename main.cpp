@@ -1,10 +1,22 @@
 #include <iostream>
+#include "Actor.h"
 #include "Player.h"
 #include "Goblin.h"
 #include "Slime.h"
 #include "WildBoar.h"
 
+
 using namespace std;
+
+
+void MoveActor(AActor* Actor, int ActorCount)
+{
+	for (int i = 0; i < ActorCount; i++)
+	{
+		Actor[i].Move();
+	}
+}
+
 
 int main()
 {
@@ -15,42 +27,28 @@ int main()
 
 
 	APlayer* Player = new APlayer[PlayerCount];
-	ASlime* Slimes = new ASlime[SlimeCount];
-	AGoblin* Goblins = new AGoblin[GoblinCount];
+	ASlime* Slime = new ASlime[SlimeCount];
+	AGoblin* Goblin = new AGoblin[GoblinCount];
 	AWildBoar* WildBoar = new AWildBoar[WildBoarCount];
 
 
-	for (int i = 0; i < PlayerCount; i++)
-	{
-		Player[i].Move();
-	}	
-
-	for (int i = 0; i < SlimeCount; i++)
-	{
-		Slimes[i].Move();
-	}
-
-	for (int i = 0; i < GoblinCount; i++)
-	{
-		Goblins[i].Move();
-	}
-
-	for (int i = 0; i < WildBoarCount; i++)
-	{
-		WildBoar[i].Move();
-	}
+	MoveActor(Player, PlayerCount);
+	MoveActor(Slime, SlimeCount);
+	MoveActor(Goblin, GoblinCount);
+	MoveActor(WildBoar, WildBoarCount);
 
 
 	delete[] Player;
-	delete[] Goblins;
-	delete[] Slimes;
+	delete[] Goblin;
+	delete[] Slime;	
 	delete[] WildBoar;
 
 
 	Player = nullptr;
-	Goblins = nullptr;
-	Slimes = nullptr;
+	Goblin = nullptr;
+	Slime = nullptr;
 	WildBoar = nullptr;
+
 
 	return 0;
 }
