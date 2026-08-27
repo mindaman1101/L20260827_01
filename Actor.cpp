@@ -15,8 +15,21 @@ AActor::~AActor()
 
 void AActor::Move()
 {
+	cout << "AActor ÀÌµ¿" << endl;
 }
 
 void AActor::Attack()
+{
+}
+
+void AActor::Input()
+{
+}
+
+void AActor::Tick()
+{
+}
+
+void AActor::Render()
 {
 }

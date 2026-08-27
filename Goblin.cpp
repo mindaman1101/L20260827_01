@@ -5,10 +5,13 @@ using namespace std;
 
 AGoblin::AGoblin()
 {
-	cout << "AGoblin 생성자" << endl;
 }
 
 AGoblin::~AGoblin()
 {
-	cout << "AGoblin 소멸자" << endl;
+}
+
+void AGoblin::Move()
+{
+	cout << "AGoblin 이동" << endl;
 }

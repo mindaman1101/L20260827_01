@@ -1,10 +1,12 @@
 #pragma once
-#include "Monster.h"
+#include "Actor.h"
 
-class AWildBoar : public AMonster
+class AWildBoar : public AActor
 {
 public:
 	AWildBoar();
 
 	~AWildBoar();
+
+	void Move();
 };

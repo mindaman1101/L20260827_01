@@ -12,3 +12,8 @@ APlayer::~APlayer()
 {
 	cout << "APlayer ¼Ò¸êÀÚ" << endl;
 }
+
+void APlayer::Move()
+{
+	cout << "APlayer ÀÌµ¿" << endl;
+}

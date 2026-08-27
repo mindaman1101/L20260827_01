@@ -5,10 +5,13 @@ using namespace std;
 
 AWildBoar::AWildBoar()
 {
-	cout << "AWildBoar 생성자" << endl;
 }
 
 AWildBoar::~AWildBoar()
 {
-	cout << "AWildBoar 소멸자" << endl;
+}
+
+void AWildBoar::Move()
+{
+	cout << "AWildBoar 이동" << endl;
 }

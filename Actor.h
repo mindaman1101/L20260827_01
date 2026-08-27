@@ -7,7 +7,11 @@ public:
 
 	~AActor();
 
-	void Move();
+	virtual void Move();
 
 	void Attack();
+
+	virtual void Input();
+	virtual void Tick();
+	virtual void Render();
 };

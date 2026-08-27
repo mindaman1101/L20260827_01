@@ -5,10 +5,13 @@ using namespace std;
 
 ASlime::ASlime()
 {
-	cout << "ASlime 생성자" << endl;
 }
 
 ASlime::~ASlime()
 {
-	cout << "ASlime 소멸자" << endl;
+}
+
+void ASlime::Move()
+{
+	cout << "ASlime 이동" << endl;
 }

@@ -4,51 +4,41 @@
 #include "Goblin.h"
 #include "Slime.h"
 #include "WildBoar.h"
-
+#include <vector>
 
 using namespace std;
 
-
 void MoveActor(AActor* Actor, int ActorCount)
 {
-	for (int i = 0; i < ActorCount; i++)
-	{
-		Actor[i].Move();
-	}
-}
 
+}
 
 int main()
 {
-	int PlayerCount = 1;
-	int SlimeCount = 3;
-	int GoblinCount = 2;
-	int WildBoarCount = 1;
+	vector<AActor*> Actors;
 
+	Actors.push_back(new APlayer());
+	Actors.push_back(new ASlime());
+	Actors.push_back(new ASlime());
+	Actors.push_back(new ASlime());
+	Actors.push_back(new AGoblin());
+	Actors.push_back(new AGoblin());
+	Actors.push_back(new AWildBoar());
 
-	APlayer* Player = new APlayer[PlayerCount];
-	ASlime* Slime = new ASlime[SlimeCount];
-	AGoblin* Goblin = new AGoblin[GoblinCount];
-	AWildBoar* WildBoar = new AWildBoar[WildBoarCount];
+	for (int i = 0; i < Actors.size(); i++)
+	{
+		// make actors
+	}
 
+	for (int i = 0; i < Actors.size(); i++)
+	{
+		Actors[i]->Move();
+	}
 
-	MoveActor(Player, PlayerCount);
-	MoveActor(Slime, SlimeCount);
-	MoveActor(Goblin, GoblinCount);
-	MoveActor(WildBoar, WildBoarCount);
-
-
-	delete[] Player;
-	delete[] Goblin;
-	delete[] Slime;	
-	delete[] WildBoar;
-
-
-	Player = nullptr;
-	Goblin = nullptr;
-	Slime = nullptr;
-	WildBoar = nullptr;
-
+	for (int i = 0; i < Actors.size(); i++)
+	{
+		delete Actors[i];
+	}
 
 	return 0;
 }

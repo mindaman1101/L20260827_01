@@ -1,10 +1,12 @@
 #pragma once
-#include "Monster.h"
+#include "Actor.h"
 
-class AGoblin : public AMonster
+class AGoblin : public AActor
 {
 public:
 	AGoblin();
 
 	~AGoblin();
+
+	void Move();
 };
