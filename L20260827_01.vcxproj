@@ -127,7 +127,6 @@
     <ClCompile Include="Goblin.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Monster.cpp" />
-    <ClCompile Include="Object.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Slime.cpp" />
     <ClCompile Include="WildBoar.cpp" />
@@ -136,7 +135,6 @@
     <ClInclude Include="Actor.h" />
     <ClInclude Include="Goblin.h" />
     <ClInclude Include="Monster.h" />
-    <ClInclude Include="Object.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Slime.h" />
     <ClInclude Include="WildBoar.h" />

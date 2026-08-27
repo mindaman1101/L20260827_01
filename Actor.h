@@ -1,31 +1,13 @@
 #pragma once
-#include "Object.h"
-#include <iostream>
 
-class AActor : public UObject
+class AActor
 {
 public:
-	AActor()
-	{
-		X = 0;
-		Y = 0;
-		Z = 0;
+	AActor();
 
-		std::cout << "AActor »ý¼º" << std::endl;
-	}
+	~AActor();
 
-	~AActor()
-	{
-		std::cout << "AActor ¼Ò¸ê" << std::endl;
-	}
-
-	void Render();
-
-protected:
 	void Move();
-	void Attack();
 
-	int X;
-	int Y;
-	int Z;
+	void Attack();
 };

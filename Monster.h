@@ -5,13 +5,7 @@
 class AMonster : public AActor
 {
 public:
-	AMonster()
-	{
-		std::cout << "AMonster »ý¼º" << std::endl;
-	}
+	AMonster();
 
-	~AMonster()
-	{
-		std::cout << "AMonster ¼Ò¸ê" << std::endl;
-	}
+	~AMonster();
 };

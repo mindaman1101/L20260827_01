@@ -4,7 +4,7 @@
 #include "Slime.h"
 #include "WildBoar.h"
 
-using namespace std;
+using namespace std;	
 
 int main()
 {
@@ -12,6 +12,8 @@ int main()
 	AGoblin* Goblin = new AGoblin();
 	ASlime* Slime = new ASlime();
 	AWildBoar* WildBoar = new AWildBoar();
+
+	cout << endl << "---" << endl << endl;
 
 	delete Player;
 	delete Goblin;

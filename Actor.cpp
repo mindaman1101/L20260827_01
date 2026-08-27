@@ -1,6 +1,10 @@
 #include "Actor.h"
 
-void AActor::Render()
+AActor::AActor()
+{
+}
+
+AActor::~AActor()
 {
 }
 
