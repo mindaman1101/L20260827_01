@@ -13,5 +13,5 @@ AGoblin::~AGoblin()
 
 void AGoblin::Move()
 {
-	cout << "AGoblin ÀÌµ¿" << endl;
+	cout << "AGoblin ¶Ú´Ù." << endl;
 }

@@ -1,12 +1,12 @@
 #pragma once
-#include "Actor.h"
+#include "Monster.h"
 
-class ASlime : public AActor
+class ASlime : public AMonster
 {
 public:
 	ASlime();
 
-	~ASlime();
+	virtual ~ASlime();
 
-	void Move();
+	virtual void Move() override;
 };

@@ -13,5 +13,5 @@ AWildBoar::~AWildBoar()
 
 void AWildBoar::Move()
 {
-	cout << "AWildBoar 이동" << endl;
+	cout << "AWildBoar 달린다." << endl;
 }

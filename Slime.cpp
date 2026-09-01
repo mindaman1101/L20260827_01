@@ -13,5 +13,5 @@ ASlime::~ASlime()
 
 void ASlime::Move()
 {
-	cout << "ASlime 이동" << endl;
+	cout << "ASlime 미끄러진다." << endl;
 }
